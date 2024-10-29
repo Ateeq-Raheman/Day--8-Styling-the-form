@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling the form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Please Login</h1>
+        <form id="loginForm">
+            <div class="form-control">
+                <input type="text" id="email" class="input" required>
+                <label for="email">Email</label>
+            </div>
+            <div class="form-control">
+                <input type="password" id="password" class="input" required>
+                <label for="password">Password</label>
+            </div>
+            <button class="btn" type="submit">Login</button>
+            <p class="text">Don't Have An Account?
+                <a href="#">Register</a>
+            </p>
+        </form>
+
+        <!-- This paragraph will display the success or error message -->
+        <p id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
